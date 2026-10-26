@@ -1,0 +1,24 @@
+{
+    "project": "Road Damage and Pothole Detection",
+    "model": "YOLOv8 Nano",
+    "hardware": "NVIDIA GeForce RTX 2050, 4 GB VRAM",
+    "training_epochs": 30,
+    "test_images": 67,
+    "cleaned_test_ground_truth_instances": 153,
+    "evaluation": {
+        "precision": 0.7422,
+        "recall": 0.7151,
+        "mAP50": 0.7688,
+        "mAP50_95": 0.5006
+    },
+    "model_path": "results/yolov8n_baseline/weights/best.pt",
+    "application_path": "app.py",
+    "evaluation_path": "results/yolov8n_clean_test_evaluation",
+    "notes": [
+        "Results are from the cleaned test-label copy.",
+        "One malformed zero-width annotation was excluded.",
+        "The missing ground-truth box was not reconstructed.",
+        "Results should be interpreted with this data-quality limitation.",
+        "The model is a research prototype and is not validated for operational road-safety decisions."
+    ]
+}
